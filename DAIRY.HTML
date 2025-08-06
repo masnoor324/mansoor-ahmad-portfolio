@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Daily Checklist | Mansoor Ahmad</title>
+    <style>
+        /* === CSS START === */
+        :root {
+            --primary: #321B15;
+            --secondary: #ECE5D8;
+            --accent: #D4A373;
+            --light: #f8f9fa;
+            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: var(--secondary);
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .seo-section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        h2 {
+            color: var(--accent);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .checklist {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .check-item {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .check-item h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        .completed {
+            opacity: 0.7;
+            position: relative;
+        }
+        
+        .completed::after {
+            content: "✓ DONE";
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .checklist {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* === CSS END === */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SEO DAIRY</h1>
+            <p>MANSOOR SEO CHECK-LIST</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Keyword Research Section -->
+        <section class="seo-section">
+            <h2>Keyword Research Tasks</h2>
+            <div class="checklist">
+                <div class="check-item">
+                    <h3>1. Identify New Keywords</h3>
+                    <p>• Check keyword difficulty (KD < 40)<br>• Minimum search volume: 100+<br>• Commercial intent keywords</p>
+                </div>
+                <div class="check-item">
+                    <h3>2. Competitor Analysis</h3>
+                    <p>• Analyze top 3 competitors<br>• Identify their ranking keywords<br>• Find content gaps</p>
+                </div>
+                <div class="check-item">
+                    <h3>3. Long-Tail Keywords</h3>
+                    <p>• Find question-based keywords<br>• "Near me" local keywords<br>• Buyer intent phrases</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- On-Page SEO Section -->
+        <section class="seo-section">
+            <h2>On-Page SEO Tasks</h2>
+            <div class="checklist">
+                <div class="check-item">
+                    <h3>1. Title Tag Optimization</h3>
+                    <p>• Include primary keyword<br>• Max 60 characters<br>• Unique for each page</p>
+                </div>
+                <div class="check-item">
+                    <h3>2. Content Optimization</h3>
+                    <p>• Keyword density 1-2%<br>• Use H2/H3 headings<br>• Add internal links (3-5 per page)</p>
+                </div>
+                <div class="check-item">
+                    <h3>3. Image Optimization</h3>
+                    <p>• Compress images (WebP format)<br>• Add descriptive alt text<br>• Use proper file names</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Off-Page SEO Section -->
+        <section class="seo-section">
+            <h2>Off-Page SEO Tasks</h2>
+            <div class="checklist">
+                <div class="check-item">
+                    <h3>1. Backlink Building</h3>
+                    <p>• Guest posting (2/week)<br>• Broken link building<br>• HARO link opportunities</p>
+                </div>
+                <div class="check-item">
+                    <h3>2. Local SEO</h3>
+                    <p>• Update Google My Business<br>• Build local citations<br>• Get customer reviews</p>
+                </div>
+                <div class="check-item">
+                    <h3>3. Social Signals</h3>
+                    <p>• Share content on LinkedIn<br>• Pinterest for visual content<br>• Twitter engagement</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical SEO Section -->
+        <section class="seo-section">
+            <h2>Technical SEO Tasks</h2>
+            <div class="checklist">
+                <div class="check-item">
+                    <h3>1. Site Speed</h3>
+                    <p>• Check PageSpeed Insights<br>• Optimize CSS/JS<br>• Enable caching</p>
+                </div>
+                <div class="check-item">
+                    <h3>2. Mobile Optimization</h3>
+                    <p>• Test mobile-friendliness<br>• Check viewport settings<br>• Optimize touch elements</p>
+                </div>
+                <div class="check-item">
+                    <h3>3. Indexing Issues</h3>
+                    <p>• Check Google Search Console<br>• Fix crawl errors<br>• Submit sitemap</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pro Tips Section -->
+        <section class="seo-section">
+            <h2>Advanced SEO Tricks</h2>
+            <div class="checklist">
+                <div class="check-item">
+                    <h3>1. Schema Markup</h3>
+                    <p>• Add FAQ schema<br>• Product schema for eCommerce<br>• Breadcrumb markup</p>
+                </div>
+                <div class="check-item">
+                    <h3>2. Content Upgrades</h3>
+                    <p>• Update old posts (Yearly)<br>• Add new statistics<br>• Refresh broken links</p>
+                </div>
+                <div class="check-item">
+                    <h3>3. Voice Search</h3>
+                    <p>• Optimize for questions<br>• Use natural language<br>• Focus on featured snippets</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // === JS START ===
+        document.addEventListener('DOMContentLoaded', function() {
+            // Make checklist items clickable
+            const items = document.querySelectorAll('.check-item');
+            
+            items.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('completed');
+                    
+                    // Save state to localStorage
+                    const section = this.closest('section').querySelector('h2').textContent;
+                    const task = this.querySelector('h3').textContent;
+                    const key = `${section}-${task}`;
+                    
+                    if(this.classList.contains('completed')) {
+                        localStorage.setItem(key, 'completed');
+                    } else {
+                        localStorage.removeItem(key);
+                    }
+                });
+                
+                // Load saved state
+                const section = item.closest('section').querySelector('h2').textContent;
+                const task = item.querySelector('h3').textContent;
+                const key = `${section}-${task}`;
+                
+                if(localStorage.getItem(key)) {
+                    item.classList.add('completed');
+                }
+            });
+            
+            // Print shortcut (Ctrl+P)
+            document.addEventListener('keydown', function(e) {
+                if(e.ctrlKey && e.key === 'p') {
+                    e.preventDefault();
+                    alert('Use browser print (Chrome: Ctrl+Shift+P) for best results');
+                    window.print();
+                }
+            });
+        });
+        // === JS END ===
+    </script>
+</body>
+</html>
